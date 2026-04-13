@@ -11,7 +11,7 @@ class Docklens < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/L-Jayawardhana/DockLens/releases/download/v1.0.0/docklens_1.0.0_darwin_amd64.tar.gz"
-      sha256 "2e9fba6107cf96f9d132cc6d0cf1f4f6dace8390129ee67398e88bb617ffdb57"
+      sha256 "0aec3590ba4df5d9332dc342914eca429fd43617f83d3a8e8931c29f7f84fb28"
 
       define_method(:install) do
         bin.install "docklens"
@@ -19,7 +19,7 @@ class Docklens < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/L-Jayawardhana/DockLens/releases/download/v1.0.0/docklens_1.0.0_darwin_arm64.tar.gz"
-      sha256 "588c7c0ceb9a4a839e642ef45a66dbd4e37a543275dc83dc34863518ac00c23d"
+      sha256 "17095e7f51d1fadce382d78610b79b8e4c404652d09e628666e2a0533789e539"
 
       define_method(:install) do
         bin.install "docklens"
@@ -30,14 +30,14 @@ class Docklens < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/L-Jayawardhana/DockLens/releases/download/v1.0.0/docklens_1.0.0_linux_amd64.tar.gz"
-      sha256 "46791cc8147a3106e6bac7df2a1f0d9ae5104794fe0a9f132271fbbf1a8d83eb"
+      sha256 "4e1f43f53e8d3ffa441882bb03712a540cc1385a17bdb04c7b27ce6f34779d90"
       define_method(:install) do
         bin.install "docklens"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/L-Jayawardhana/DockLens/releases/download/v1.0.0/docklens_1.0.0_linux_arm64.tar.gz"
-      sha256 "3ce20792484388a729b2cc85dc7bcd010ad50cf804d8c24439934afa140c7af5"
+      sha256 "a9ce599f6e3608008abcad625cce67e98a74bbeba50f21296b3103517d1c80a8"
       define_method(:install) do
         bin.install "docklens"
       end
