@@ -5,21 +5,21 @@
 class Docklens < Formula
   desc "A terminal UI for managing Docker containers, images, volumes, and networks."
   homepage "https://github.com/L-Jayawardhana/DockLens"
-  version "1.0.0"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/L-Jayawardhana/DockLens/releases/download/v1.0.0/docklens_1.0.0_darwin_amd64.tar.gz"
-      sha256 "6895af69a9f896a0cd475ee661821fd9e9a9f2b4d80cab22fe016d5f0603c9a9"
+      url "https://github.com/L-Jayawardhana/DockLens/releases/download/v2.0.0/docklens_2.0.0_darwin_amd64.tar.gz"
+      sha256 "bc84fa6ec736ab944256b5ebacb9a346615931fc7485ab630531598ee4a3c2d5"
 
       define_method(:install) do
         bin.install "docklens"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/L-Jayawardhana/DockLens/releases/download/v1.0.0/docklens_1.0.0_darwin_arm64.tar.gz"
-      sha256 "7695571189bab7004a4ccb8852e15a77825acf989532212bd7ba90e282994dcf"
+      url "https://github.com/L-Jayawardhana/DockLens/releases/download/v2.0.0/docklens_2.0.0_darwin_arm64.tar.gz"
+      sha256 "19bd88f0b0e56d2aa3f2e38f930cb8f6913f71050fefa6a27df146aaa8348d53"
 
       define_method(:install) do
         bin.install "docklens"
@@ -29,15 +29,15 @@ class Docklens < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/L-Jayawardhana/DockLens/releases/download/v1.0.0/docklens_1.0.0_linux_amd64.tar.gz"
-      sha256 "bfc33a3c5850f4bbd19e1a9dd6970bb277dbe824623d78c05660f924b5908cde"
+      url "https://github.com/L-Jayawardhana/DockLens/releases/download/v2.0.0/docklens_2.0.0_linux_amd64.tar.gz"
+      sha256 "bed6f1a5f222a8a6e4478cdc7ab42b8a1abacbc8144a42e9c496a575dd5eccf6"
       define_method(:install) do
         bin.install "docklens"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/L-Jayawardhana/DockLens/releases/download/v1.0.0/docklens_1.0.0_linux_arm64.tar.gz"
-      sha256 "5ef7eb83be9d721a084e26f35b9914aa1661761f29b91aa45b497953b7b8cacf"
+      url "https://github.com/L-Jayawardhana/DockLens/releases/download/v2.0.0/docklens_2.0.0_linux_arm64.tar.gz"
+      sha256 "cb9c250ecbb0559933fb54f77dad8de89fd47d3583589c6f9e9dff8b01f876d1"
       define_method(:install) do
         bin.install "docklens"
       end
